@@ -31,6 +31,45 @@ This voting application follows a microservices architecture pattern with the fo
 | **Redis**      | Redis        | In-memory cache/queue     | 6379 |
 | **PostgreSQL** | PostgreSQL   | Persistent database       | 5432 |
 
+## 📸 Project Screenshots
+
+### 🖼️ Deployment Process
+
+![AKS Cluster Setup](voting/Capture%20d'écran%202025-04-14%20142305.png)
+_AKS cluster creation and configuration_
+
+![Kubernetes Deployment](voting/Capture%20d'écran%202025-04-15%20115719.png)
+_Kubernetes manifest deployment process_
+
+### 🌐 Application Interface
+
+![Voting Interface](voting/Capture%20d'écran%202025-04-19%20004315.png)
+_Voting application frontend interface_
+
+![Results Display](voting/Capture%20d'écran%202025-04-19%20004326.png)
+_Real-time results display_
+
+### ⚙️ Cluster Management
+
+![Pod Management](voting/Capture%20d'écran%202025-04-19%20004340.png)
+_Kubernetes pod management and monitoring_
+
+![Service Configuration](voting/Capture%20d'écran%202025-04-19%20235104.png)
+_Service discovery and load balancing_
+
+### 📊 Monitoring & Scaling
+
+![Application Scaling](voting/Capture%20d'écran%202025-04-20%20002855.png)
+_Horizontal pod autoscaling demonstration_
+
+![Cluster Monitoring](voting/Capture%20d'écran%202025-04-20%20005335.png)
+_Azure Monitor integration and metrics_
+
+![Production Deployment](voting/Capture%20d'écran%202025-04-20%20005350.png)
+_Final production deployment on AKS_
+
+
+
 ### 📊 Application Flow
 
 ```
@@ -61,35 +100,6 @@ This voting application follows a microservices architecture pattern with the fo
 
 - **YAML Manifests** - Kubernetes configuration files
 - **Container Registry** - Image storage and management
-
-## 📁 Project Structure
-
-```
-voting-app/
-├── 📄 README.md
-├── 📋 commands.txt
-├── 🗳️ Voting App Components
-│   ├── voting-app-deploy.yaml
-│   ├── voting-app-pod.yaml
-│   └── voting-app-service.yaml
-├── 📊 Result App Components
-│   ├── result-app-deploy.yaml
-│   ├── result-app-pod.yaml
-│   └── result-app-service.yaml
-├── ⚙️ Worker Components
-│   ├── worker-app-deploy.yaml
-│   └── worker-app-pod.yaml
-├── 🗄️ Database Components
-│   ├── postgres-deploy.yaml
-│   ├── postgres-pod.yaml
-│   └── postgres-service.yaml
-├── 📡 Cache Components
-│   ├── redis-deploy.yaml
-│   ├── redis-pod.yaml
-│   └── redis-service.yaml
-└── 📸 voting/
-    └── [Project Screenshots]
-```
 
 ## 🚀 Deployment Instructions
 
@@ -166,43 +176,6 @@ kubectl scale deployment voting-app-deploy --replicas=3
 # Scale result app
 kubectl scale deployment result-app-deploy --replicas=2
 ```
-
-## 📸 Project Screenshots
-
-### 🖼️ Deployment Process
-
-![AKS Cluster Setup](voting/Capture%20d'écran%202025-04-14%20142305.png)
-_AKS cluster creation and configuration_
-
-![Kubernetes Deployment](voting/Capture%20d'écran%202025-04-15%20115719.png)
-_Kubernetes manifest deployment process_
-
-### 🌐 Application Interface
-
-![Voting Interface](voting/Capture%20d'écran%202025-04-19%20004315.png)
-_Voting application frontend interface_
-
-![Results Display](voting/Capture%20d'écran%202025-04-19%20004326.png)
-_Real-time results display_
-
-### ⚙️ Cluster Management
-
-![Pod Management](voting/Capture%20d'écran%202025-04-19%20004340.png)
-_Kubernetes pod management and monitoring_
-
-![Service Configuration](voting/Capture%20d'écran%202025-04-19%20235104.png)
-_Service discovery and load balancing_
-
-### 📊 Monitoring & Scaling
-
-![Application Scaling](voting/Capture%20d'écran%202025-04-20%20002855.png)
-_Horizontal pod autoscaling demonstration_
-
-![Cluster Monitoring](voting/Capture%20d'écran%202025-04-20%20005335.png)
-_Azure Monitor integration and metrics_
-
-![Production Deployment](voting/Capture%20d'écran%202025-04-20%20005350.png)
-_Final production deployment on AKS_
 
 ## 🔧 Configuration Details
 
